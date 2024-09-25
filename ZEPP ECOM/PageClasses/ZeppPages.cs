@@ -21,7 +21,7 @@ namespace ZEPP_ECOM.PageClasses
         IWebElement SendOtpBtn => dr.FindElement(By.XPath("//button[@id='send_mobile_login_link']"));
         IWebElement SubmitOtp => dr.FindElement(By.XPath("//button[@id='submitOTP']"));
 
-        public void Verifying()
+        public void VerifyingOtp()
         {
             ClickOnMoblieNumber.Click();
             EnteringMobileNumber.SendKeys("6281454459");
