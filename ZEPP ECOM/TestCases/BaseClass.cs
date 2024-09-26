@@ -17,8 +17,7 @@ namespace ZEPP_ECOM.TestCases
         { 
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://zepp.studentpurchaseprogram.com/");
-            driver.Manage().Window.Maximize();
-            
+            driver.Manage().Window.Maximize();   
         }
     }
 }

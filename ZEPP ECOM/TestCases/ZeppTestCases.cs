@@ -7,13 +7,21 @@ using ZEPP_ECOM.PageClasses;
 
 namespace ZEPP_ECOM.TestCases
 {
-    public class ZeppTestCases:BaseClass
+    public class ZeppTestCases : BaseClass
     {
         [Test]
-        public void OpenZeppApplication()
+        public void OpenMobileNumber()
         {
             ZeppPages zeppTestCases = new ZeppPages(driver);
             zeppTestCases.VerifyingOtp();
+        }
+        [Test]
+        public void OpenEmail()
+        {
+            ZeppPages zeppTestCases = new ZeppPages(driver);
+            zeppTestCases.EnterEmail();
+
+
         }
     }
 }
